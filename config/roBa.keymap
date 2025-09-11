@@ -53,11 +53,6 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
-
-        mute {
-            bindings = <&kp C_MUTE>;
-            key-positions = <15>;
-        };
     };
 
     macros {
@@ -97,12 +92,10 @@
         FUNCTION {
             bindings = <
 &kp F1   &kp F2   &kp F3   &kp F4           &kp F5                                       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NON_US_BACKSLASH  &kp BACKSPACE
-&kp F6   &kp F7   &kp F8   &kp F9           &kp F10        &kp C_MUTE      &kp ENTER     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp F6   &kp F7   &kp F8   &kp F9           &kp F10        &kp K_MUTE      &kp ENTER     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp F11  &kp F12  &kp F13  &mt SLASH MINUS  &mt STAR PLUS  &kp EQUAL       &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt PERIOD COMMA      &trans
 &trans   &trans   &trans   &trans           &trans         &trans          &trans        &trans                                                          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp K_VOLUME_DOWN2 K_VOLUME_UP2>;
         };
 
         NUM {
