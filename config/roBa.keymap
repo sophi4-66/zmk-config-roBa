@@ -82,7 +82,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                        &kp T                                                                &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                        &kp G        &kp PRINTSCREEN                    &mkp MB1             &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp INTERNATIONAL_2                &mt SEMICOLON COLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp LANG4                          &mt SEMICOLON COLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE        &lt 6 ENTER                             &kp DEL
             >;
 
@@ -91,10 +91,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4           &kp F5                                       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NON_US_BACKSLASH  &kp BACKSPACE
-&kp F6   &kp F7   &kp F8   &kp F9           &kp F10        &kp K_MUTE      &kp ENTER     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp F11  &kp F12  &kp F13  &mt SLASH MINUS  &mt STAR PLUS  &kp EQUAL       &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt PERIOD COMMA      &trans
-&trans   &trans   &trans   &trans           &trans         &trans          &trans        &trans                                                          &trans
+&kp F1   &kp F2   &kp F3   &kp F4           &kp F5                                      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NON_US_BACKSLASH  &kp BACKSPACE
+&kp F6   &kp F7   &kp F8   &kp F9           &kp F10        &mkp MB1       &kp ENTER     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp F11  &kp F12  &kp F13  &mt SLASH MINUS  &mt STAR PLUS  &kp EQUAL      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt PERIOD COMMA      &trans
+&trans   &trans   &trans   &trans           &trans         &trans         &trans        &trans                                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
