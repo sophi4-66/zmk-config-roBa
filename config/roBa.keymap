@@ -96,6 +96,8 @@
 &kp F11  &kp F12  &kp F13  &mt SLASH MINUS  &mt STAR PLUS  &kp EQUAL       &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt PERIOD COMMA      &trans
 &trans   &trans   &trans   &trans           &trans         &trans          &trans        &trans                                                          &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         NUM {
