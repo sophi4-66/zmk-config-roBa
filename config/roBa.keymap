@@ -64,6 +64,14 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        btwin: btwin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 7>;
+
+            label = "BTWIN";
+        };
     };
 
     behaviors {
@@ -92,10 +100,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                                &mt MINUS Y  &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp PRINTSCREEN                    &mkp MB1             &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &mt LANGUAGE_1 LANG2               &mt SEMICOLON COLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE        &lt 6 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                          &kp T                                                                      &mt MINUS Y  &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                          &kp G                             &kp PRINTSCREEN           &mkp MB1       &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B                             &mt LANGUAGE_1 LANG2      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 INT_MUHENKAN  &lt_to_layer_0 3 INTERNATIONAL_4  &lt 1 SPACE               &kp BACKSPACE  &lt 6 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -159,6 +167,17 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
+        };
+
+        ipad {
+            bindings = <
+&kp Q             &kp W             &kp E         &kp R                          &kp T                                                             &mt MINUS Y  &kp U  &lt 5 I    &kp O       &kp P
+&kp A             &kp S             &kp D         &kp F                          &kp G                             &kp LGUI         &mkp MB1       &kp H        &kp J  &kp K      &kp L       &kp SQT
+&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V                          &kp B                             &kp GLOBE        &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT  &lt_to_layer_0 2 INT_MUHENKAN  &lt_to_layer_0 3 INTERNATIONAL_4  &lt 1 SPACE      &kp BACKSPACE  &lt 6 ENTER                                &kp DEL
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
